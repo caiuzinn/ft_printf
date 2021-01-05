@@ -69,14 +69,14 @@ static t_flags      treat_flags(va_list args, t_flags fl)
             fl.pad_c = '0';
     }
     if (fl.set[j] == '*')
-        fl = treat_start(args, fl, &j);
+        fl = treat_star(args, fl, &j);
     while (fl.set[j] != '\0' && ft_strchr_ok(DIGITS, fl.set[j]))
         fl.width = 10 * fl.width + fl.set[j++] - '0';
     if (fl.set[j] == '.')
     {
         fl.point = 1;
         if (fl.set[++j] == '*')
-            fl = treat_flags(args, fl, &j);
+            fl = treat_star(args, fl, &j);
         while (fl.set[j] != '\0' && ft_strchr_ok(DIGITS, fl.set[j]))
             fl.precision = 10 * fl.precision + fl.set[j++] - '0';
     }
