@@ -19,9 +19,11 @@ RM		= /bin/rm -f
 
 NAME	= libftprintf.a
 
-SRCS	= ft_printf.c ft_printf_flags.c ft_printf_cs_pct.c ft_printf_piduxo.c \
-			ft_printf_fg.c ft_printf_e.c ft_ftoa_rnd.c \
-			ft_printf_utils.c ft_printf_utils_2.c ft_printf_utils_3.c
+SRCS	= ft_printf.c 
+
+# SRCS	= ft_printf.c ft_printf_flags.c ft_printf_cs_pct.c ft_printf_piduxo.c \
+# 			ft_printf_fg.c ft_printf_e.c ft_ftoa_rnd.c \
+# 			ft_printf_utils.c ft_printf_utils_2.c ft_printf_utils_3.c
 
 OBJS	= $(SRCS:.c=.o)
 
