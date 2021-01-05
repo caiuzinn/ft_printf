@@ -78,9 +78,10 @@ int				ft_printf(const char *str, ...);
 
 /*
 ** -.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-
-** UTILS FUNCTIONS
+**  printf_cs_pct 
 */
-
-int ft_strchr_ok(char *s, char c);
+void            print_spec_c(int *len, t_flags fl, char c);
+void            print_spec_s(int *len, t_flags fl, char *s);
+void            print_spec_pct(int *len, t_flags fl);
 
 #endif
