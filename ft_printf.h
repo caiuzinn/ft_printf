@@ -13,8 +13,6 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#include "libft.h"
-
 /*
 ** -.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-
 ** HEADERS
@@ -23,7 +21,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdint.h>
-# include "../libft/libft.h"
+# include "./libft/libft.h"
 # include <inttypes.h>
 
 /*
@@ -78,7 +76,7 @@ int				ft_printf(const char *str, ...);
 
 /*
 ** -.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-
-**  printf_cs_pct 
+**  printf_cs_pct
 */
 void            print_spec_c(int *len, t_flags fl, char c);
 void            print_spec_s(int *len, t_flags fl, char *s);

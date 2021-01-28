@@ -15,15 +15,8 @@ int		main(void)
 
 	printf(MAIN_1("=== empty file ===\n"));
 	//printf(HEADER_2("• Line n.%d ") HEADER_1("[RET=%d]: ") "\"%s\"\n", i, ret, line);
-	
 
+	ft_printf("ABCabc123");
 
 	printf(MAIN("=== • Program ended • ===\n\n"));
 }
-
-
-
-
-
-
-
