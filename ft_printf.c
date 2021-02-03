@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-/*
+
 static void         triage_specs(va_list args, int *len, t_flags fl)
 {
     int *p;
@@ -36,7 +36,7 @@ static void         triage_specs(va_list args, int *len, t_flags fl)
     if (fl.spe_c == 'f' || fl.spe_c == 'e' || fl.spe_c == 'g')
         print_spec_f_e_g(len, fl, va_arg(args, double));
 }
-*/
+
 static t_flags      treat_star(va_list args, t_flags fl, int *j)
 {
     int value;
@@ -110,7 +110,7 @@ static void         get_fspecs(va_list args, const char *format, int *len, int *
         fl.length = 0;
         fl.pad_c = ' ';
         fl = treat_flags(args, fl);
-        //triage_specs(args, len, fl);
+        triage_specs(args, len, fl);
     }
     else
         (*len) = -1;
