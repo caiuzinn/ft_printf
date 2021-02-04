@@ -28,9 +28,9 @@
 ** -.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-
 ** MACROS
 */
-# define FLAGS		"-+#0 "
-# define ALL_FL		"-+#0 *.0123456789lh"
-# define FSPECS		"cspdiuxX%onfge"
+# define FLAGS		"-0 "
+# define ALL_FL		"-0 *.0123456789lh"
+# define FSPECS		"cspdiuxX%"
 
 # define DIGITS		"0123456789"
 # define HEXLOW	    "0123456789abcdef"
